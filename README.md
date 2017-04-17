@@ -23,7 +23,7 @@ On passe en props les informations liées à l'application. Les avantages sont :
   
 ### 2. Transformer les composants qui ne gére pas de state en stateless components (dumb components ou presentational components)
 
-### 3. Essayer de créer des compposants réutilisables :
+### 3. Essayer de créer des composants réutilisables :
 
   * Passer les informations relative à la spécificité de l'application en props 
   * Utiliser les patterns vus ci-dessus (react-bits) selon vos besoins
