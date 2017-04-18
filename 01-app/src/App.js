@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; // eslint-disable-line no-unused-vars
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 class App extends Component {
 
@@ -49,10 +49,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header" style={this.state.objStyle}>
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Coloring input</h2>
-        </div>
+        <Header objStyle={this.state.objStyle}/>
+
         <p className="App-intro">
           Quand je change la valeur du champ texte ci-dessous, je change la couleur de fond du header
         </p>

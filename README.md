@@ -52,5 +52,9 @@ Je vous propose d'utiliser [isomorphic-fetch](https://github.com/matthew-andrews
 
 Le but est de récupérer le nom de la couleur pour ensuite l'ajouter à la liste.
 
+## 06 - sauvegarder la liste de couleur dans le local storage
+
+[local storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage)
+
 
  
