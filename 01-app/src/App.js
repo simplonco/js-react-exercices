@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; // eslint-disable-line no-unused-vars
 import './App.css';
 import Header from './Header';
+import ColorList from './ColorList';
 
 class App extends Component {
 
@@ -32,11 +33,12 @@ class App extends Component {
   //   console.log('this.state.color : ', this.state.color);
   // })
 
-  changeColor(color) {
+  changeColor = (color) => {
     this.setState({
       objStyle : {backgroundColor: color}
     });
   }
+
   handleAddColor = (e) => {
     e.preventDefault();
 
@@ -54,18 +56,7 @@ class App extends Component {
         <p className="App-intro">
           Quand je change la valeur du champ texte ci-dessous, je change la couleur de fond du header
         </p>
-        <ul className="color-container"> {
-          this.state.colors.map( item =>
-            <li key={item.id}>
-              <button style={{backgroundColor: item.color}}
-                      onClick={() => this.changeColor(item.color)}>
-                {item.name}
-              </button>
-            </li>
-          )
-        }
-
-        </ul>
+        <ColorList colors={this.state.colors} changeColor={this.changeColor} />
         <div  className="creation">
         <form onSubmit={this.handleAddColor} className="form">
 
